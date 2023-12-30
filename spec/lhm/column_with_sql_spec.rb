@@ -280,7 +280,7 @@ end
 
 describe "Testing" do
   it "does a thing" do
-    match = 'BOOLEAN NOT NULL'
+    definition = 'BOOLEAN NOT NULL'
     match = /((\w*) NULL)/i.match(definition)
     return true unless match
 
