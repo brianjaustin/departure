@@ -277,3 +277,14 @@ describe Lhm::ColumnWithSql do
     end
   end
 end
+
+describe "Testing" do
+  it "does a thing" do
+    match = 'BOOLEAN NOT NULL'
+    match = /((\w*) NULL)/i.match(definition)
+    return true unless match
+
+    res = match[2].downcase == 'not' ? false : true
+    expect(res).to be false
+  end
+end
