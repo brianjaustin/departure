@@ -87,7 +87,7 @@ module Lhm
     #
     # @return [Boolean]
     def null_value
-      match = /((\w*) NULL)/i.match(definition)
+      match = /((NOT)? NULL)/i.match(definition)
       return true unless match
 
       match[2].downcase == 'not' ? false : true
