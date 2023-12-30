@@ -7,7 +7,6 @@ describe "Testing" do
     return true unless match
 
     res = match[2].downcase == 'not' ? false : true
-    match.inspect
-    expect(res).to be false
+    expect(match.inspect).to be false
   end
 end
