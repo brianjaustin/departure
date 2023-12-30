@@ -90,7 +90,7 @@ module Lhm
       match = /((NOT)? NULL)/i.match(definition)
       return true unless match
 
-      match[2].downcase == 'not' ? false : true
+      match[2]&.downcase == 'not' ? false : true
     end
   end
 end
